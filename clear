@@ -1,0 +1,613 @@
+[33mcommit b5df28f0818c2b22ff9ffa9dc11fd661d2cd6444[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Giovana <gtm.leao@gmail.com>
+Date:   Thu Apr 7 19:03:20 2022 -0300
+
+    fazendo o upload do site spa
+
+[1mdiff --git a/imagens/banner.jpeg b/imagens/banner.jpeg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d7f8f08[m
+Binary files /dev/null and b/imagens/banner.jpeg differ
+[1mdiff --git a/imagens/beleza.jpeg b/imagens/beleza.jpeg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..97b7999[m
+Binary files /dev/null and b/imagens/beleza.jpeg differ
+[1mdiff --git a/imagens/bem-estar.jpeg b/imagens/bem-estar.jpeg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..06bb6cd[m
+Binary files /dev/null and b/imagens/bem-estar.jpeg differ
+[1mdiff --git a/imagens/descanso.jpeg b/imagens/descanso.jpeg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..39c3e47[m
+Binary files /dev/null and b/imagens/descanso.jpeg differ
+[1mdiff --git a/imagens/interior-1.jpeg b/imagens/interior-1.jpeg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a4dd815[m
+Binary files /dev/null and b/imagens/interior-1.jpeg differ
+[1mdiff --git a/imagens/interior-2.jpeg b/imagens/interior-2.jpeg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..9320024[m
+Binary files /dev/null and b/imagens/interior-2.jpeg differ
+[1mdiff --git a/imagens/interior-3.jpeg b/imagens/interior-3.jpeg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..27fde8e[m
+Binary files /dev/null and b/imagens/interior-3.jpeg differ
+[1mdiff --git a/imagens/pedra-e-flor.jpeg b/imagens/pedra-e-flor.jpeg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..108255b[m
+Binary files /dev/null and b/imagens/pedra-e-flor.jpeg differ
+[1mdiff --git a/index.html b/index.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..0bd945e[m
+[1m--- /dev/null[m
+[1m+++ b/index.html[m
+[36m@@ -0,0 +1,103 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <meta http-equiv="X-UA-Compatible" content="IE=edge">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m    <title>Alura SPA</title>[m
+[32m+[m[32m    <link rel="preconnect" href="https://fonts.googleapis.com">[m
+[32m+[m[32m    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>[m
+[32m+[m[32m    <link[m
+[32m+[m[32m        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"[m
+[32m+[m[32m        rel="stylesheet">[m
+[32m+[m[32m    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&display=swap" rel="stylesheet">[m
+[32m+[m[32m    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"[m
+[32m+[m[32m        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="[m
+[32m+[m[32m        crossorigin="anonymous" referrerpolicy="no-referrer" />[m
+[32m+[m[32m    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">[m
+[32m+[m[32m    <link rel="stylesheet" href="./styles/style.css">[m
+[32m+[m[32m</head>[m
+[32m+[m
+[32m+[m[32m<body>[m
+[32m+[m
+[32m+[m[32m    <header>[m
+[32m+[m[32m        <nav>[m
+[32m+[m[32m            <ul>[m
+[32m+[m[32m                <li>[m
+[32m+[m[32m                    <a href="">Serviços</a>[m
+[32m+[m[32m                </li>[m
+[32m+[m[32m                <li>[m
+[32m+[m[32m                    <a href="">Curiosidades</a>[m
+[32m+[m[32m                </li>[m
+[32m+[m[32m                <li>[m
+[32m+[m[32m                    <a href="">Nosso espaço</a>[m
+[32m+[m[32m                </li>[m
+[32m+[m[32m            </ul>[m
+[32m+[m[32m        </nav>[m
+[32m+[m[32m        <section class="banner">[m
+[32m+[m[32m            <div class="inner-banner">[m
+[32m+[m[32m                <h1>Alura SPA</h1>[m
+[32m+[m[32m                <h2>Venha viver o seu melhor dia!</h2>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m        </section>[m
+[32m+[m[32m    </header>[m
+[32m+[m[32m    <main>[m
+[32m+[m[32m        <section id="servicos">[m
+[32m+[m[32m            <h4>O que oferecemos</h4>[m
+[32m+[m[32m            <h3>Uma ampla diversidade de serviços com alto padrão de qualidade</h3>[m
+[32m+[m[32m            <div class="cards">[m
+[32m+[m[32m                <div class="card">[m
+[32m+[m[32m                    <div class="img-container">[m
+[32m+[m[32m                        <img src="imagens/beleza.jpeg" alt="">[m
+[32m+[m[32m                    </div>[m
+[32m+[m[32m                    <h5>Bem-estar</h5>[m
+[32m+[m[32m                    <p>Estar bem com nós mesmos faz toda a diferença. Aproveite nossos tratamentos para ter um momento de auto-cuidado e aumentar a sua auto-estima</p>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m                <div class="card">[m
+[32m+[m[32m                    <div class="img-container">[m
+[32m+[m[32m                        <img src="imagens/bem-estar.jpeg" alt="">[m
+[32m+[m[32m                    </div>[m
+[32m+[m[32m                    <h5>Renovação</h5>[m
+[32m+[m[32m                    <p>Você merece relaxar. Confira as nossas opções de massagens que vão fazer você renovar as energias e esquecer do estresse do dia-a-dia</p>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m                <div class="card">[m
+[32m+[m[32m                    <div class="img-container">[m
+[32m+[m[32m                        <img src="imagens/descanso.jpeg" alt="">[m
+[32m+[m[32m                    </div>[m
+[32m+[m[32m                    <h5>Massagem</h5>[m
+[32m+[m[32m                    <p>Se você precisa de um dia especial para cuidar de você, preparamos opções que promovem uma renovação completa. Confira nossos dias especiais, banhos e tratamentos holísticos. </p>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m        </section>[m
+[32m+[m[32m        <section id="cupom">[m
+[32m+[m[32m            <div class="texto">[m
+[32m+[m[32m                <h2><i class="fas fa-gift"></i> Inscreva-se para ganhar descontos!</h2>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m            <div class="inscricao">[m
+[32m+[m[32m                <form action="">[m
+[32m+[m[32m                    <div class="input">[m
+[32m+[m[32m                        <input type="email">[m
+[32m+[m[32m                    </div>[m
+[32m+[m[32m                    <button>enviar!</button>[m
+[32m+[m[32m                </form>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m        </section>[m
+[32m+[m[32m        <section>[m
+[32m+[m[32m            <div>[m
+[32m+[m[32m                <img src="imagens/pedra-e-flor.jpeg" alt="">[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m            <div>[m
+[32m+[m[32m                <h3>É sobre bem estar</h3>[m
+[32m+[m[32m                <h4>Cuide do seu corpo e leve boas memórias consigo.</h4>[m
+[32m+[m[32m                <p>Carregue com você o bem-estar, onde estiver. Leve o conforto do SPA para a sua casa. Confira nossas opções de sabonetes, sais de banho e velas para presentear você mesmo ou quem você ama. </p>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m        </section>[m
+[32m+[m[32m    </main>[m
+[32m+[m[32m    <footer>[m
+[32m+[m[32m        Estilizado com Sass e com <i class="fas fa-heart"></i>[m
+[32m+[m[32m    </footer>[m
+[32m+[m
+[32m+[m[32m</body>[m
+[32m+[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/styles/abstract/_base.scss b/styles/abstract/_base.scss[m
+[1mnew file mode 100644[m
+[1mindex 0000000..95398b0[m
+[1m--- /dev/null[m
+[1m+++ b/styles/abstract/_base.scss[m
+[36m@@ -0,0 +1,5 @@[m
+[32m+[m[32m@import './variaveis';[m
+[32m+[m
+[32m+[m[32mhtml, body {[m
+[32m+[m[32m    font-family: $fonte;[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/styles/abstract/_variaveis.scss b/styles/abstract/_variaveis.scss[m
+[1mnew file mode 100644[m
+[1mindex 0000000..8328ebd[m
+[1m--- /dev/null[m
+[1m+++ b/styles/abstract/_variaveis.scss[m
+[36m@@ -0,0 +1,10 @@[m
+[32m+[m[32m// Fontes[m
+[32m+[m[32m$fonte: 'Roboto', sans-serif;[m
+[32m+[m
+[32m+[m[32m// Cores[m
+[32m+[m[32m$cor-primaria: #495371;[m
+[32m+[m[32m$cor-secundaria: #74959A;[m
+[32m+[m[32m$cor-terciaria: #F1E0AC;[m
+[32m+[m
+[32m+[m[32m// tamanho das fontes[m
+[32m+[m[32m$tamanho-do-texto: 3rem;[m
+\ No newline at end of file[m
+[1mdiff --git a/styles/componets/_banner.scss b/styles/componets/_banner.scss[m
+[1mnew file mode 100644[m
+[1mindex 0000000..da8083b[m
+[1m--- /dev/null[m
+[1m+++ b/styles/componets/_banner.scss[m
+[36m@@ -0,0 +1,25 @@[m
+[32m+[m[32m@import '../abstract/variaveis';[m
+[32m+[m
+[32m+[m[32m.banner {[m
+[32m+[m[32m    background: url(../../imagens/banner.jpeg) 27% center no-repeat;[m
+[32m+[m[32m    min-height: 350px;[m
+[32m+[m[32m    background-size: cover;[m
+[32m+[m[32m    display: flex;[m
+[32m+[m[32m    justify-content: center;[m
+[32m+[m[32m    align-items: center;[m
+[32m+[m[32m    opacity: 0.9;[m
+[32m+[m[32m    .inner-banner {[m
+[32m+[m[32m        padding: 3rem;[m
+[32m+[m[32m        background-color: $cor-terciaria;[m
+[32m+[m[32m        opacity: 0.9;[m
+[32m+[m[32m        border-radius: 45px;[m
+[32m+[m[32m        h1 {[m
+[32m+[m[32m            font-size: $tamanho-do-texto;[m
+[32m+[m[32m            color: $cor-primaria;[m
+[32m+[m[32m        }[m
+[32m+[m[32m        h2 {[m
+[32m+[m[32m            font-size: $tamanho-do-texto / 2;[m
+[32m+[m[32m            color: $cor-secundaria;[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/styles/componets/_cupom.scss b/styles/componets/_cupom.scss[m
+[1mnew file mode 100644[m
+[1mindex 0000000..cdc2e8e[m
+[1m--- /dev/null[m
+[1m+++ b/styles/componets/_cupom.scss[m
+[36m@@ -0,0 +1,55 @@[m
+[32m+[m[32m@import '../abstract/variaveis';[m
+[32m+[m
+[32m+[m[32m#cupom {[m
+[32m+[m[32m    background-color: $cor-terciaria;[m
+[32m+[m[32m    padding: 4rem;[m
+[32m+[m[32m    text-align: center;[m
+[32m+[m[32m    .texto {[m
+[32m+[m[32m        color: $cor-primaria;[m
+[32m+[m[32m        h2 {[m
+[32m+[m[32m            margin: 2rem;[m
+[32m+[m[32m            font-size: $tamanho-do-texto / 1.7;[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m[32m    .input {[m
+[32m+[m[32m        margin: 0 auto;[m
+[32m+[m[32m        width: 575px;[m
+[32m+[m[32m        border-radius: 20px;[m
+[32m+[m[32m        border: 4px solid white;[m
+[32m+[m[32m        background: white;[m
+[32m+[m[32m        input {[m
+[32m+[m[32m            border-radius: 20px;[m
+[32m+[m[32m            height: 40px;[m
+[32m+[m[32m            border: none;[m
+[32m+[m[32m            width: 540px;[m
+[32m+[m[32m            outline: none;[m
+[32m+[m[32m            text-align: center;[m
+[32m+[m[32m            font-size: 26px;[m
+[32m+[m[32m        }[m
+[32m+[m[32m        &:hover, &:focus-within {[m
+[32m+[m[32m            box-shadow: 1px 1px 8px 1px $cor-primaria;[m
+[32m+[m[32m            outline: none;[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m[32m    button {[m
+[32m+[m[32m        text-transform: uppercase;[m
+[32m+[m[32m        margin-top: .75rem;[m
+[32m+[m[32m        outline: none;[m
+[32m+[m[32m        height: 40px;[m
+[32m+[m[32m        text-align: center;[m
+[32m+[m[32m        width: 130px;[m
+[32m+[m[32m        background-color: $cor-primaria;[m
+[32m+[m[32m        color: $cor-secundaria;[m
+[32m+[m[32m        letter-spacing: 1px;[m
+[32m+[m[32m        font-size: 12px;[m
+[32m+[m[32m        font-weight: bold;[m
+[32m+[m[32m        cursor: pointer;[m
+[32m+[m[32m        border: 2px $cor-primaria;[m
+[32m+[m[32m        border-radius: 40px;[m
+[32m+[m[32m        &:hover {[m
+[32m+[m[32m            color: $cor-primaria;[m
+[32m+[m[32m            background-color: $cor-secundaria;[m
+[32m+[m[32m            border-color: $cor-terciaria;[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/styles/componets/_footer.sass b/styles/componets/_footer.sass[m
+[1mnew file mode 100644[m
+[1mindex 0000000..ee7614b[m
+[1m--- /dev/null[m
+[1m+++ b/styles/componets/_footer.sass[m
+[36m@@ -0,0 +1,16 @@[m
+[32m+[m[32mimport styles/abstract/_variaveis.scss[m
+[32m+[m
+[32m+[m[32m@mixin bg-cores($cores...)[m
+[32m+[m[32m    background: linear-gradient(to left, $cores)[m
+[32m+[m[41m    [m
+[32m+[m
+[32m+[m[32mfooter[m[41m [m
+[32m+[m[32m    text-align: center[m
+[32m+[m[32m    font-size: $tamanho-do-texto / 2[m
+[32m+[m[32m    border-top: 2px solid $cor-primaria[m
+[32m+[m[32m    margin-top: 1rem[m
+[32m+[m[32m    padding: 1.2rem[m
+[32m+[m[32m    @include bg-cores($cor-primaria, $cor-secundaria, $cor-terciaria, $cor-terciaria)[m
+[32m+[m[41m    [m
+[32m+[m[32m    i[m
+[32m+[m[32m        color: red[m
+\ No newline at end of file[m
+[1mdiff --git a/styles/componets/_navbar.scss b/styles/componets/_navbar.scss[m
+[1mnew file mode 100644[m
+[1mindex 0000000..0feb833[m
+[1m--- /dev/null[m
+[1m+++ b/styles/componets/_navbar.scss[m
+[36m@@ -0,0 +1,21 @@[m
+[32m+[m[32m@import '../abstract/variaveis';[m
+[32m+[m
+[32m+[m[32mnav {[m
+[32m+[m[32m    text-align: center;[m
+[32m+[m[32m    ul {[m
+[32m+[m[32m        li {[m
+[32m+[m[32m            display: inline-block;[m
+[32m+[m[32m            padding: 1rem;[m
+[32m+[m[32m            a {[m
+[32m+[m[32m                text-transform: uppercase;[m
+[32m+[m[32m                text-decoration: none;[m
+[32m+[m[32m                font-weight: bold;[m
+[32m+[m[32m                color: $cor-primaria;[m
+[32m+[m[32m                &:hover {[m
+[32m+[m[32m                    border-bottom: 2px solid $cor-secundaria;[m
+[32m+[m[32m                }[m
+[32m+[m[32m            }[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[32m+[m
+[1mdiff --git a/styles/componets/_servicos.scss b/styles/componets/_servicos.scss[m
+[1mnew file mode 100644[m
+[1mindex 0000000..94c1478[m
+[1m--- /dev/null[m
+[1m+++ b/styles/componets/_servicos.scss[m
+[36m@@ -0,0 +1,47 @@[m
+[32m+[m[32m@import '../abstract/variaveis';[m
+[32m+[m
+[32m+[m[32m#servicos {[m
+[32m+[m[32m    margin: 80px;[m
+[32m+[m[32m    h4 {[m
+[32m+[m[32m        font-size: $tamanho-do-texto / 2.5;[m
+[32m+[m[32m        color: $cor-secundaria;[m
+[32m+[m[32m        text-transform: uppercase;[m
+[32m+[m[32m        font-weight: 300;[m
+[32m+[m[32m        text-align: center;[m
+[32m+[m[32m        margin: 1rem;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    h3 {[m
+[32m+[m[32m        text-align: center;[m
+[32m+[m[32m        font-size: $tamanho-do-texto / 1.2;[m
+[32m+[m[32m        margin-bottom: 80px;[m
+[32m+[m[32m        font-weight: 300;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    .cards {[m
+[32m+[m[32m        display: flex;[m
+[32m+[m[32m        justify-content: space-evenly;[m
+[32m+[m[32m        .card {[m
+[32m+[m[32m            width: 360px;[m
+[32m+[m[32m            text-align: center;[m
+[32m+[m[32m            h5 {[m
+[32m+[m[32m                font-size: $tamanho-do-texto/1.5;[m
+[32m+[m[32m                font-weight: 300;[m
+[32m+[m[32m                margin-top: 25px;[m
+[32m+[m[32m                margin-bottom: 20px;[m
+[32m+[m[32m                color: $cor-primaria;[m
+[32m+[m[32m            }[m
+[32m+[m[32m            p {[m
+[32m+[m[32m                font-size: $tamanho-do-texto /3;[m
+[32m+[m[32m                font-weight: 300;[m
+[32m+[m[32m                color: $cor-primaria;[m
+[32m+[m[32m                line-height: 1.25rem;[m
+[32m+[m[32m            }[m
+[32m+[m[32m            .img-container {[m
+[32m+[m[32m                padding-bottom: 2px;[m
+[32m+[m[32m                border-bottom: 6px solid $cor-secundaria;[m
+[32m+[m[32m                img {[m
+[32m+[m[32m                    max-width: 100%;[m
+[32m+[m[32m                }[m
+[32m+[m[32m            }[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/styles/style.css b/styles/style.css[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a0c515a[m
+[1m--- /dev/null[m
+[1m+++ b/styles/style.css[m
+[36m@@ -0,0 +1,191 @@[m
+[32m+[m[32mhtml, body {[m
+[32m+[m[32m  font-family: "Roboto", sans-serif;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mnav {[m
+[32m+[m[32m  text-align: center;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mnav ul li {[m
+[32m+[m[32m  display: inline-block;[m
+[32m+[m[32m  padding: 1rem;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mnav ul li a {[m
+[32m+[m[32m  text-transform: uppercase;[m
+[32m+[m[32m  text-decoration: none;[m
+[32m+[m[32m  font-weight: bold;[m
+[32m+[m[32m  color: #495371;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mnav ul li a:hover {[m
+[32m+[m[32m  border-bottom: 2px solid #74959A;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.banner {[m
+[32m+[m[32m  background: url(../../imagens/banner.jpeg) 27% center no-repeat;[m
+[32m+[m[32m  min-height: 350px;[m
+[32m+[m[32m  background-size: cover;[m
+[32m+[m[32m  display: -webkit-box;[m
+[32m+[m[32m  display: -ms-flexbox;[m
+[32m+[m[32m  display: flex;[m
+[32m+[m[32m  -webkit-box-pack: center;[m
+[32m+[m[32m      -ms-flex-pack: center;[m
+[32m+[m[32m          justify-content: center;[m
+[32m+[m[32m  -webkit-box-align: center;[m
+[32m+[m[32m      -ms-flex-align: center;[m
+[32m+[m[32m          align-items: center;[m
+[32m+[m[32m  opacity: 0.9;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.banner .inner-banner {[m
+[32m+[m[32m  padding: 3rem;[m
+[32m+[m[32m  background-color: #F1E0AC;[m
+[32m+[m[32m  opacity: 0.9;[m
+[32m+[m[32m  border-radius: 45px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.banner .inner-banner h1 {[m
+[32m+[m[32m  font-size: 3rem;[m
+[32m+[m[32m  color: #495371;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.banner .inner-banner h2 {[m
+[32m+[m[32m  font-size: 1.5rem;[m
+[32m+[m[32m  color: #74959A;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m#servicos {[m
+[32m+[m[32m  margin: 80px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m#servicos h4 {[m
+[32m+[m[32m  font-size: 1.2rem;[m
+[32m+[m[32m  color: #74959A;[m
+[32m+[m[32m  text-transform: uppercase;[m
+[32m+[m[32m  font-weight: 300;[m
+[32m+[m[32m  text-align: center;[m
+[32m+[m[32m  margin: 1rem;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m#servicos h3 {[m
+[32m+[m[32m  text-align: center;[m
+[32m+[m[32m  font-size: 2.5rem;[m
+[32m+[m[32m  margin-bottom: 80px;[m
+[32m+[m[32m  font-weight: 300;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m#servicos .cards {[m
+[32m+[m[32m  display: -webkit-box;[m
+[32m+[m[32m  display: -ms-flexbox;[m
+[32m+[m[32m  display: flex;[m
+[32m+[m[32m  -webkit-box-pack: space-evenly;[m
+[32m+[m[32m      -ms-flex-pack: space-evenly;[m
+[32m+[m[32m          justify-content: space-evenly;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m#servicos .cards .card {[m
+[32m+[m[32m  width: 360px;[m
+[32m+[m[32m  text-align: center;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m#servicos .cards .card h5 {[m
+[32m+[m[32m  font-size: 2rem;[m
+[32m+[m[32m  font-weight: 300;[m
+[32m+[m[32m  margin-top: 25px;[m
+[32m+[m[32m  margin-bottom: 20px;[m
+[32m+[m[32m  color: #495371;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m#servicos .cards .card p {[m
+[32m+[m[32m  font-size: 1rem;[m
+[32m+[m[32m  font-weight: 300;[m
+[32m+[m[32m  color: #495371;[m
+[32m+[m[32m  line-height: 1.25rem;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m#servicos .cards .card .img-container {[m
+[32m+[m[32m  padding-bottom: 2px;[m
+[32m+[m[32m  border-bottom: 6px solid #74959A;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m#servicos .cards .card .img-container img {[m
+[32m+[m[32m  max-width: 100%;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m#cupom {[m
+[32m+[m[32m  background-color: #F1E0AC;[m
+[32m+[m[32m  padding: 4rem;[m
+[32m+[m[32m  text-align: center;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m#cupom .texto {[m
+[32m+[m[32m  color: #495371;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m#cupom .texto h2 {[m
+[32m+[m[32m  margin: 2rem;[m
+[32m+[m[32m  font-size: 1.76471rem;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m#cupom .input {[m
+[32m+[m[32m  margin: 0 auto;[m
+[32m+[m[32m  width: 575px;[m
+[32m+[m[32m  border-radius: 20px;[m
+[32m+[m[32m  border: 4px solid white;[m
+[32m+[m[32m  background: white;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m#cupom .input input {[m
+[32m+[m[32m  border-radius: 20px;[m
+[32m+[m[32m  height: 40px;[m
+[32m+[m[32m  border: none;[m
+[32m+[m[32m  width: 540px;[m
+[32m+[m[32m  outline: none;[m
+[32m+[m[32m  text-align: center;[m
+[32m+[m[32m  font-size: 26px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m#cupom .input:hover, #cupom .input:focus-within {[m
+[32m+[m[32m  -webkit-box-shadow: 1px 1px 8px 1px #495371;[m
+[32m+[m[32m          box-shadow: 1px 1px 8px 1px #495371;[m
+[32m+[m[32m  outline: none;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m#cupom button {[m
+[32m+[m[32m  text-transform: uppercase;[m
+[32m+[m[32m  margin-top: .75rem;[m
+[32m+[m[32m  outline: none;[m
+[32m+[m[32m  height: 40px;[m
+[32m+[m[32m  text-align: center;[m
+[32m+[m[32m  width: 130px;[m
+[32m+[m[32m  background-color: #495371;[m
+[32m+[m[32m  color: #74959A;[m
+[32m+[m[32m  letter-spacing: 1px;[m
+[32m+[m[32m  font-size: 12px;[m
+[32m+[m[32m  font-weight: bold;[m
+[32m+[m[32m  cursor: pointer;[m
+[32m+[m[32m  border: 2px #495371;[m
+[32m+[m[32m  border-radius: 40px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m#cupom button:hover {[m
+[32m+[m[32m  color: #495371;[m
+[32m+[m[32m  background-color: #74959A;[m
+[32m+[m[32m  border-color: #F1E0AC;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mfooter {[m
+[32m+[m[32m  text-align: center;[m
+[32m+[m[32m  font-size: 1.5rem;[m
+[32m+[m[32m  border-top: 2px solid #495371;[m
+[32m+[m[32m  margin-top: 1rem;[m
+[32m+[m[32m  padding: 1.2rem;[m
+[32m+[m[32m  background: -webkit-gradient(linear, right top, left top, from(#495371), color-stop(#74959A), color-stop(#F1E0AC), to(#F1E0AC));[m
+[32m+[m[32m  background: linear-gradient(to left, #495371, #74959A, #F1E0AC, #F1E0AC);[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mfooter i {[m
+[32m+[m[32m  color: red;[m
+[32m+[m[32m}[m
+[32m+[m[32m/*# sourceMappingURL=style.css.map */[m
+\ No newline at end of file[m
+[1mdiff --git a/styles/style.css.map b/styles/style.css.map[m
+[1mnew file mode 100644[m
+[1mindex 0000000..896c954[m
+[1m--- /dev/null[m
+[1m+++ b/styles/style.css.map[m
+[36m@@ -0,0 +1,20 @@[m
+[32m+[m[32m{[m
+[32m+[m[32m    "version": 3,[m
+[32m+[m[32m    "mappings": "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",[m
+[32m+[m[32m    "sources": [[m
+[32m+[m[32m        "style.scss",[m
+[32m+[m[32m        "abstract/_base.scss",[m
+[32m+[m[32m        "abstract/_variaveis.scss",[m
+[32m+[m[32m        "componets/_navbar.scss",[m
+[32m+[m[32m        "abstract/_variaveis.scss",[m
+[32m+[m[32m        "componets/_banner.scss",[m
+[32m+[m[32m        "abstract/_variaveis.scss",[m
+[32m+[m[32m        "componets/_servicos.scss",[m
+[32m+[m[32m        "abstract/_variaveis.scss",[m
+[32m+[m[32m        "componets/_cupom.scss",[m
+[32m+[m[32m        "abstract/_variaveis.scss",[m
+[32m+[m[32m        "componets/_footer.sass"[m
+[32m+[m[32m    ],[m
+[32m+[m[32m    "names": [],[m
+[32m+[m[32m    "file": "style.css"[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/styles/style.scss b/styles/style.scss[m
+[1mnew file mode 100644[m
+[1mindex 0000000..0c806c9[m
+[1m--- /dev/null[m
+[1m+++ b/styles/style.scss[m
+[36m@@ -0,0 +1,6 @@[m
+[32m+[m[32m@import './abstract/base';[m
+[32m+[m[32m@import './componets/navbar';[m
+[32m+[m[32m@import './componets/banner';[m
+[32m+[m[32m@import './componets/servicos';[m
+[32m+[m[32m@import './componets/cupom';[m
+[32m+[m[32m@import './componets/_footer.sass';[m
+\ No newline at end of file[m
